@@ -367,8 +367,8 @@ input[type="text"]:hover {
     background-color: black;
     color:white;
     border-radius: 5px;
-    padding:4px;
-    width: 17%;
+    padding:2px;
+    width: 21%;
     float: right;
     text-align: center;
     text-decoration: none;
