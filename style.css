@@ -58,19 +58,24 @@ h3 {
 .topnav {
     height: 60px;
     box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2);
-
+    overflow: hidden;
+    display:flex
+   
 }
 
 .name-details {
     margin: 200px 400px 50px 175px;
+    
 
 }
 
 .topnav a {
-    float: right;
+    float: left;
+    display: block;
     padding: 15px;
     text-decoration: none;
     font-size: 25px;
+    color:black
 }
 
 .topnav a:hover {
@@ -126,6 +131,9 @@ input[type="text"]:hover {
     padding: 10px;
     font-size: 17px;
     float: right;
+}
+.bn:hover{
+    background-color:rgb(54, 54, 205) ;
 }
 
 #resume{
@@ -191,7 +199,8 @@ input[type="text"]:hover {
 
 .skill {
     justify-content: center;
-    height: 100vh;}
+    height: 100vh;
+}
 
 .projects{
     height: 100vh;
@@ -206,7 +215,7 @@ input[type="text"]:hover {
      background-color: rgb(236, 222, 222);
      border: 2px solid rgb(167, 155, 155);
      border-radius: 15px;
-     height: 8%;
+     height: 7%;
      padding: 10px;
      padding-left: 20px;
      margin: 50px;
@@ -235,4 +244,220 @@ input[type="text"]:hover {
 .pro-link:hover{
     background-color: rgb(186, 181, 181);
     color: black;
+}
+
+ .topnav .ico{
+    display: none;
+}
+
+
+@media  screen and (max-width:475px) {
+    h1 {
+        font-weight: bolder;
+        font-size: 45px;
+        line-height: 0.6;
+        text-wrap: nowrap;
+      
+    }
+    h2 {
+        font-weight: bolder;
+        font-size: 28px;
+        line-height: 1;
+    }
+    .name-details {
+        margin: 20% 20% 0% 20%;
+    
+    }
+    .image {
+        margin: 15% 20% 20% 18%;
+        width: 58%;
+        height: 30%;
+        border-radius: 50%;
+        overflow: hidden;
+        
+    }
+    .home {
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+    .suraj {
+        width: 300px;
+        height: 369px;
+        margin-left: -20px;
+        
+    }
+    .about-main {
+        margin: 20% 0 0 10%;
+        height: 45%;
+        width: 80%;
+        text-align: left;
+    }
+    
+#resume{
+    background-color: rgb(71, 6, 250);
+    color: white;
+    border-radius: 6px;
+    padding: 9px;
+    font-size: 17px;
+    width: 40%;
+    height: 10%;
+    margin-top: 0;
+   
+   
+}
+.boxes {
+     grid-template-columns: auto auto ;
+}
+.heading {
+    
+    padding-top:10px;
+    margin-bottom: 20%;
+    font-size: 45px;
+    font-weight: 900;
+
+}
+
+.box {
+
+    width: 100px;
+    height: 100px;
+    margin:15px;
+   
+}
+
+
+.icon {
+    width: 82px;
+    height: 80px;
+    padding: 10px;
+}
+
+.about {
+    margin-top: -30%;
+    height: 100vh;
+    margin-bottom: 120px;
+}
+
+.pro-container{
+    
+    width: 100%;
+    height: 40vh;
+}
+
+
+.project-container{
+    width: 90%;
+    background-color: rgb(236, 222, 222);
+    border: 2px solid rgb(134, 125, 125);
+    border-radius: 15px;
+    height: 10%;
+    padding: 10px;
+    padding-left: 20px;
+    margin: 60px;
+    margin-left: 1%;
+    font-size: 25px;
+    font-weight:600 ;
+    box-shadow: 0 4px 20px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.pro-link{
+    background-color: black;
+    color:white;
+    border-radius: 5px;
+    padding:4px;
+    width: 17%;
+    float: right;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+.contact {
+    height: 60vh;
+    display: grid;
+    justify-content: center;
+    margin-top: -25%;
+
+}
+
+.contact-container {
+    height: 319px;
+    width: 346px;
+    margin-top:-10%;
+}
+
+input[type="text"] {
+    width: 86%;
+    padding: 8px 10px;
+    border-radius: 6px;
+}
+
+.bn{
+    background-color: blue;
+    color: white;
+    border-radius: 6px;
+}
+
+.projects{
+    height: 80vh;
+    margin-top: -40%;
+   
+}
+
+}
+
+
+@media  screen and (max-width:475px) {
+    .topnav a{
+        display: none;
+    }
+    .topnav .ico {
+        display:block;
+    }
+     .topnav .responsive .ico{
+        position:absolute;
+        right: 0;
+        top: 0;
+    }
+ 
+    .topnav.responsive a {
+    text-align: center;
+     display:block;
+      font-size: 28px;
+      font-weight:300;
+      padding: 10px;
+      color: white;
+    }
+
+  .topnav.responsive a:hover { 
+      
+    color: rgb(13, 175, 228);
+     background-color:rgb(137, 38, 109) ; 
+  }
+
+  body{
+    position:relative;
+  }
+  .topnav{
+    position:absolute;
+    z-index:10;
+    display:flex;
+    flex-direction:column;
+    right:0px;
+
+
+
+
+  }
+  .topnav.responsive {
+    width: 100%;
+    height: 328px;
+    background-color:rgb(132, 18, 100) ;
+}
+  
+
 }

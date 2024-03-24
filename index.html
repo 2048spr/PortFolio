@@ -12,19 +12,26 @@
 </head>
 
 <body>
-    <div class="topnav">
-        <a href="#contact">Contact</a>
-        <a href="#project">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#about">About</a>
+    <div class="topnav" id="myTopnav">
+        
+        <a href="javascript:void(0);" class="ico" onclick="myFunction()" style="font-size:30px;">
+            <i class="fa fa-bars"></i>
+        </a>
         <a href="/index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#project">Projects</a>
+        <a href="#contact">Contact</a>
+       
+        
+        
     </div>
     <div class="home">
         <div class="name-details">
             <h1>Hi There ,</h1>
             <h1>I'm <span class="name">Suraj</span></h1>
             <h2>Frontend Developer</h2>
-            <div class="">
+            <div >
                 <i class=" icons fa-brands fa-instagram fa-xl"></i>
                 <i class=" icons fa-brands fa-github fa-xl"></i>
                 <i class=" icons fa-brands fa-whatsapp fa-xl"></i>
@@ -39,9 +46,9 @@
     <section class="about" id="about">
         <h2 class="heading">About</h2>
         <div class="about-main">
-            <h3 style="font-size:40px;">I'm Suraj</h3>
+            <h3 style="font-size:35px;">I'm Suraj</h3>
             <h4 style="font-size:25px;">Front End Developer</h4>
-            <p style="font-size:20px; font-weight:400">I'm a second-year BTech Computer Science student passionate about
+            <p style="font-size:21px; font-weight:400">I'm a second-year BTech Computer Science student passionate about
                 technology and innovation.
                 Currently, I'm delving into the world of coding with a focus on web development. I have proficiency in C
                 and Java languages,
@@ -93,6 +100,17 @@
 
         </div>
     </section>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
 
 </body>
 
